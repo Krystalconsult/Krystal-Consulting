@@ -229,7 +229,7 @@ Landing Page
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 285px;
-    background: url(/images/profile.jpg);
+    background: url(/Krystal-Consulting/images/profile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -299,7 +299,7 @@ About Page
 */
 
 .about-content-1{
-    background-image: url(/images/Eggs-layover.png);
+    background-image: url(/Krystal-Consulting/images/Eggs-layover.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -384,7 +384,7 @@ Training Page
     height: 100vh;
     width: 100%;
     padding-left: 100px;
-    background: url(/images/consulting-bg.png);
+    background: url(/Krystal-Consulting/images/consulting-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -479,7 +479,7 @@ Auditing Page
     height: 100vh;
     width: 100%;
     padding-left: 100px;
-    background: url(/images/auditing-bg.png);
+    background: url(/Krystal-Consulting/images/auditing-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -579,7 +579,7 @@ Consulting Page
     height: 100vh;
     width: 100%;
     padding-left: 100px;
-    background: url(/images/consulting-bg.png);
+    background: url(/Krystal-Consulting/images/consulting-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
