@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krystal Consulting</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav>
-        <div class="logo">Krystal Consulting</div>
+        <!-- <div class="logo">Krystal Consulting</div> -->
+        <a href="/index.html">
+            <img src="/images/logo.png" class="logo-image">
+        </a>
         <ul>
             <li><a class="active" href="#">Home</a></li>
             <li><a href="/pages/about-us.html">About</a></li>
@@ -30,8 +35,12 @@
     <div class="landing-content-1">
         <h1>FOOD SAFETY AND QUALITY <br>SYSTEMS EXPERTS</h1>
         <h2>On a mission to help improve and manage the <br>quality and safety of the food industry.</h2>
-        <button class="contact-btn">Get in touch</button>
-        <button class="about-btn">More about us</button>
+        <a href="#contact">
+            <button class="contact-btn">Get in touch</button>
+        </a>
+        <a href="/pages/about-us.html">
+            <button class="about-btn">More about us</button>
+        </a>
         <img src="/images/Tomato.png" class="feature-img">
     </div>
     <div class="landing-content-2">
@@ -41,19 +50,25 @@
                 <img src="/images/Icon training.png" class="service-icons">
                 <h2>TRAINING</h2>
                 <p>Customized food safety and quality systems management training.</p>
-                <button class="service-card-btn" href="#"> Learn More</button>
+                <a href="/pages/training.html">
+                    <button class="service-card-btn"> Learn More</button>
+                </a>
             </div>
             <div class="service-card">
                 <img src="/images/icon Audit.png" class="service-icons">
                 <h2>AUDITING</h2>
                 <p>First and second party audits to assist with readiness. <br>&nbsp;</p>
-                <button class="service-card-btn" href="#"> Learn More</button>
+                <a href="/pages/auditing.html">
+                    <button class="service-card-btn"> Learn More</button>
+                </a>
             </div>
             <div class="service-card">
                 <img src="/images/Icon consulting.png" class="service-icons">
                 <h2>CONSULTATION</h2>
                 <p>Expert professionals that will assist with any food safety and quality related query.</p>
-                <button class="service-card-btn" href="#"> Learn More</button>
+                <a href="/pages/consulting.html">
+                    <button class="service-card-btn"> Learn More</button>
+                </a>
             </div>
         </div>
     </div>
@@ -64,19 +79,19 @@
         </p>
         <div class="contact-box">
             <div class="profile-pic">
-                <h2>Founder <br><span>Tamsin Davids</span></h2>
-                <h3>Food Scientist, Lead Auditor, Masters<br>Candidate</h3>
+                <h2>Founder<br><span>Tamsin Davids</span></h2>
             </div>
             <div class="contact-form">
                 <form action="#" class="contact-us-form">
                     <input name="name" type="text" placeholder="Name">
                     <input name="email" type="email" placeholder="Email">
                     <input name="phone" type="number" placeholder="Phone">
-                    <input type="text" name="contact-services" placeholder="Select your service" list="contact-services">
+                    <input type="text" name="contact-services" placeholder="Select your service"
+                        list="contact-services">
                     <datalist id="contact-services">
                         <option value="Auditing">
                         <option value="Training">
-                        <option value="Consulting">    
+                        <option value="Consulting">
                     </datalist>
                     <textarea name="message" rows="5" placeholder="Enter your message"></textarea>
                     <button class="contact-us-btn">Submit</button>
@@ -86,19 +101,16 @@
     </div>
     <footer class="footer">
         <div class="copyright">
-            &copy; 2022 All Rights Reserved. Design by Krystal Consulting
+            &copy; 2022 All Rights Reserved.
         </div>
         <div class="social-links">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=100067646456523">
                 <i class="fa fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/krystal_farms/">
                 <i class="fa fa-instagram"></i>
             </a>
-            <a href="#">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#">
+            <a href="https://wa.me/27670206559?text=Hello">
                 <i class="fa fa-whatsapp"></i>
             </a>
         </div>

@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krystal Consulting</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <nav>
-        <div class="logo">Krystal Consulting</div>
+        <!-- <div class="logo">Krystal Consulting</div> -->
+        <a href="/index.html">
+            <img src="/images/logo.png" class="logo-image">
+        </a>
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/about-us.html">About</a></li>
@@ -22,50 +29,101 @@
                     <li><a href="#">Consulting</a></li>
                 </ul>
             </li>
-            <li><a href="#">Get In Touch</a></li>
+            <li><a href="#contact">Get In Touch</a></li>
         </ul>
     </nav>
     <div class="consulting-content-1">
         <h1>CONSULTATION.</h1>
         <p>
-            We are a dynamic team of consultants that are highly skilled with over 20 years 
-            <br>combined experience in the food industry. Our lead auditors have done over 500 hours 
+            We are a dynamic team of consultants that are highly skilled with over 20 years
+            <br>combined experience in the food industry. Our lead auditors have done over 500 hours
             <br>in audits and are always willing to go the extra mile to assist our clients.
         </p>
-        <li>Gap analysis - determination of the business 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;requirements and objectives and how to achieve them.</li>
-        <li>System design and implementation plan/timeline</li>
-        <li>Implementation assistance - guiding and assisting
-            clients &nbsp;&nbsp;&nbsp;&nbsp; with procedures, documentation, and records.</li>
-        <li>Regulatory compliance and maintenance</li>
-        <li>On-going support to the client.</li>
-        
+        <ul>
+            <li>Gap analysis - determination of the business
+                requirements and objectives and how to achieve them.</li>
+            <li>System design and implementation plan/timeline</li>
+            <li>Implementation assistance - guiding and assisting
+                clients with procedures, documentation, and records.</li>
+            <li>Regulatory compliance and maintenance</li>
+            <li>On-going support to the client.</li>
+        </ul>
+
         <img src="/images/Icon consulting.png" class="services-img">
     </div>
     <div class="consulting-content-2">
-        <h1>WE PROVIDE <strong>COST EFFECTIVE </strong>EXPERT SERVICE <br>FOR <strong>FOOD SAFTEY, QUALITY, ENVIRONMENTAL</strong><br> AND <strong>AGRICULTURAL </strong>MANAGEMENT SYSTEMS</h1>
-        <h2>Our areas of expertise range from snacks, beverage manufacturing, dried goods <br>(Flour, maize meal and instant porridge), dairy and meat processing, packaging <br>manufacturing as well as ready to eat meals (RTE).</h2>
+        <h1>WE PROVIDE <strong>COST EFFECTIVE </strong>EXPERT SERVICE <br>FOR <strong>FOOD SAFTEY, QUALITY,
+                ENVIRONMENTAL</strong><br> AND <strong>AGRICULTURAL </strong>MANAGEMENT SYSTEMS</h1>
+        <h2>Our areas of expertise range from snacks, beverage manufacturing, dried goods <br>(Flour, maize meal and
+            instant porridge), dairy and meat processing, packaging <br>manufacturing as well as ready to eat meals
+            (RTE).</h2>
         <h3>WHAT WE OFFER</h3>
         <div class="services-box">
             <div class="service-card">
                 <img src="/images/Icon training.png" class="service-icons">
                 <h4>TRAINING</h4>
                 <p>Customized food safety and quality systems management training.</p>
-                <button class="service-card-btn" href="#"> Learn More</button>
+                <a href="/pages/training.html">
+                    <button class="service-card-btn"> Learn More</button>
+                </a>
             </div>
             <div class="service-card">
                 <img src="/images/icon Audit.png" class="service-icons">
                 <h4>AUDITING</h4>
                 <p>First and second party audits to assist with readiness. <br>&nbsp;</p>
-                <button class="service-card-btn" href="#"> Learn More</button>
+                <a href="/pages/auditing.html">
+                    <button class="service-card-btn"> Learn More</button>
+                </a>
             </div>
             <div class="service-card">
                 <img src="/images/Icon consulting.png" class="service-icons">
                 <h4>CONSULTATION</h4>
                 <p>Expert professionals that will assist with any food safety and quality related query.</p>
-                <button class="service-card-btn" href="#"> Learn More</button>
+                <a href="#">
+                    <button class="service-card-btn"> Learn More</button>
+                </a>
             </div>
         </div>
     </div>
+    <div class="contact-content" id="contact">
+        <h1>GET IN TOUCH WITH OUR TEAM</h1>
+        <p>If you are interested in our services or have any questions
+            <br>please fill in the form below:
+        </p>
+        <div class="contact-box-1">
+            <div class="contact-form-1">
+                <form action="#" class="contact-us-form">
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="phone" type="number" placeholder="Phone">
+                    <input type="text" name="contact-services" placeholder="Select your service" list="contact-services">
+                    <datalist id="contact-services">
+                        <option value="Auditing">
+                        <option value="Training">
+                        <option value="Consulting">    
+                    </datalist>
+                    <textarea name="message" rows="5" placeholder="Enter your message"></textarea>
+                    <button class="contact-us-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            &copy; 2022 All Rights Reserved.
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100067646456523">
+                <i class="fa fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/krystal_farms/">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/27670206559?text=Hello">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
