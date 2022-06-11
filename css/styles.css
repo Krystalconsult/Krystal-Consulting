@@ -197,23 +197,41 @@ a.active {
 Landing Page 
 ==========================================================
 */
-
-.landing-content-1 {
+.landing-content-1-container{
     background: #F7E05F;
     height: 100vh;
     width: 100%;
-    padding-left: 100px;
+}
+.landing-content-1 {
+    width: 76%;
+    padding-left: 75px;
+}
+@media screen and (max-width: 991px) {
+    .landing-content-1{
+        padding-left: 50px;
+    }
 }
 .landing-content-1 h1 {
     padding-top: 200px;
     font-size: 60px;
     font-weight: 700;
 }
+@media screen and (max-width: 991px) {
+    .landing-content-1 h1{
+        padding-top: 120px;
+        font-size: 50px;
+    }
+}
 .landing-content-1 h2 {
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 30px;
     font-weight: 500;
+}
+@media screen and (max-width: 991px) {
+    .landing-content-1 h2{
+        font-size: 27px;
+    }
 }
 .landing-content-1 .contact-btn {
     height: 45px;
@@ -231,6 +249,11 @@ Landing Page
     transition: .3s;
     margin: 0;
 }
+@media screen and (max-width: 991px) {
+    .landing-content-1 .contact-btn{
+        width: 260px;
+    }
+}
 .landing-content-1 .about-btn {
     height: 45px;
     width: 370px;
@@ -247,25 +270,46 @@ Landing Page
     transition: .3s;
     margin-left: 20px;
 }
+@media screen and (max-width: 991px) {
+    .landing-content-1 .about-btn{
+        width: 260px;
+    }
+}
 .landing-content-1 .feature-img {
-    height: 500px;
+    height: 70%;
     position: absolute;
-    bottom: 60px;
+    top: 20%;
     right: 0px;
 }
+
+@media screen and (max-width: 991px) {
+    .landing-content-1 .feature-img {
+        height: 55%;
+    }
+}
+
 .landing-content-2 {
     height: 100vh;
     width: 100%;
     padding-left: 100px;
 }
-
+@media screen and (max-width: 991px) {
+    .landing-content-2{
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+}
 .landing-content-2 h1 {
     padding-top: 60px;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 3px;
 }
-
+@media screen and (max-width: 991px) {
+    .landing-content-2 h1{
+        font-size: 35px;
+    }
+}
 .services-box {
     display: flex;
     justify-content: center;
@@ -284,7 +328,11 @@ Landing Page
     margin: 15px;
     position: relative;
 }
-
+@media screen and (max-width: 991px) {
+    .service-card{
+        padding: 10px 25px;
+    }
+}
 .service-icons {
     height: 150px;
     margin-top: -90px;
@@ -295,13 +343,22 @@ Landing Page
     font-weight: 600;
     padding-top: 25px;
 }
-
+@media screen and (max-width: 991px) {
+    .service-card h2{
+        font-size: 27px;
+        padding-top: 22px;
+    }
+}
 .service-card p {
     font-size: 20px;
     font-weight: 500;
     padding-top: 20px;
 }
-
+@media screen and (max-width: 991px) {
+    .service-card p{
+        font-size: 18px;
+    }
+}
 .service-card .service-card-btn {
     height: 40px;
     width: 100%;
@@ -319,25 +376,44 @@ Landing Page
     width: 100%;
     padding-left: 100px;
 }
-
+@media screen and (max-width: 991px) {
+    .contact-content {
+        padding-left: 50px;
+    }
+}
 .contact-content h1 {
     padding-top: 90px;
     font-size: 40px;
     font-weight: 600;
 }
-
+@media screen and (max-width: 991px) {
+    .contact-content h1{
+        padding-top: 60px;
+        font-size: 30px;
+    }
+}
 .contact-content p {
     padding-top: 40px;
     font-size: 30px;
     font-weight: 500;
 }
-
+@media screen and (max-width: 991px) {
+    .contact-content p{
+        padding-top: 50px;
+        font-size: 27px;
+    }
+}
 .contact-content .contact-box {
     display: flex;
     margin-top: 30px;
     margin-left: 150px;
 }
-
+@media screen and (max-width: 991px) {
+    .contact-content .contact-box{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
 .contact-content .profile-pic {
     height: 350px;
     width: 320px;
