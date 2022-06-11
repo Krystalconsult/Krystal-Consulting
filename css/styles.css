@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,20 +6,24 @@
     box-sizing: border-box;
     color: black;
 }
-body{
+
+body {
     background: #FFF;
 }
-nav{
+
+nav {
     background: #FFF;
     position: fixed;
     width: 100%;
     z-index: 1;
 }
-nav::after{
+
+nav::after {
     content: '';
     clear: both;
     display: table;
 }
+
 /* nav .logo{
     float: left;
     font-size: 27px;
@@ -27,47 +31,54 @@ nav::after{
     line-height: 70px;
     padding-left: 60px;
 } */
-nav .logo-image{
+nav .logo-image {
     float: left;
     height: 60px;
     padding-left: 60px;
     padding-top: 10px;
 }
-nav ul{
+
+nav ul {
     float: right;
     list-style: none;
     margin-right: 40px;
     position: relative;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     line-height: 70px;
     font-size: 18px;
     padding: 8px 15px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     background: #FFF;
     transition: .5s;
     color: #A6A6A6;
 }
-nav ul ul{
+
+nav ul ul {
     position: absolute;
     top: 70px;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
 }
-nav ul li:hover > ul{
+
+nav ul li:hover>ul {
     opacity: 1;
     top: 70px;
     visibility: visible;
-    
+
 }
-nav ul ul li{
+
+nav ul ul li {
     position: relative;
     margin: 0;
     width: 150px;
@@ -76,10 +87,12 @@ nav ul ul li{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background: #FFF;
 }
-nav ul ul li a{
+
+nav ul ul li a {
     line-height: 50px;
 }
-a.active{
+
+a.active {
     background: #FFF;
     margin-top: 10px;
     transition: .5s;
@@ -89,30 +102,120 @@ a.active{
     text-underline-offset: 5px;
 }
 
+.show,
+.logoicon,
+.checkbox {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    nav ul {
+        margin-right: 0px;
+        margin-top: 60px;
+        float: right;
+    }
+
+    nav .logo-image {
+        height: 60px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        /* width: 100%; */
+    }
+
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+
+    nav ul ul li {
+        position: static;
+    }
+
+    nav ul ul a {
+        padding-left: 40px;
+    }
+
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+
+    nav ul li ul {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .show {
+        display: block;
+        color: #000;
+        font-size: 18px;
+        padding: 0 15px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    .show:hover {
+        color: #A6A6A6;
+    }
+
+    .logoicon {
+        display: block;
+        color: #000;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .show+a,
+    ul {
+        display: none;
+    }
+
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+}
+
 /* 
 ==========================================================
 Landing Page 
 ==========================================================
 */
 
-.landing-content-1{
+.landing-content-1 {
     background: #F7E05F;
     height: 100vh;
     width: 100%;
     padding-left: 100px;
 }
-.landing-content-1 h1{
+.landing-content-1 h1 {
     padding-top: 200px;
     font-size: 60px;
     font-weight: 700;
 }
-.landing-content-1 h2{
+.landing-content-1 h2 {
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 30px;
     font-weight: 500;
 }
-.landing-content-1 .contact-btn{
+.landing-content-1 .contact-btn {
     height: 45px;
     width: 370px;
     padding: 5px 15px;
@@ -128,7 +231,7 @@ Landing Page
     transition: .3s;
     margin: 0;
 }
-.landing-content-1 .about-btn{
+.landing-content-1 .about-btn {
     height: 45px;
     width: 370px;
     padding: 5px 15px;
@@ -144,31 +247,34 @@ Landing Page
     transition: .3s;
     margin-left: 20px;
 }
-.landing-content-1 .feature-img{
+.landing-content-1 .feature-img {
     height: 500px;
     position: absolute;
     bottom: 60px;
     right: 0px;
 }
-.landing-content-2{
+.landing-content-2 {
     height: 100vh;
     width: 100%;
     padding-left: 100px;
 }
-.landing-content-2 h1{
+
+.landing-content-2 h1 {
     padding-top: 60px;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 3px;
 }
-.services-box{
+
+.services-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 90px;
     min-height: 400px;
 }
-.service-card{
+
+.service-card {
     height: 365px;
     width: 335px;
     padding: 20px 35px;
@@ -178,21 +284,25 @@ Landing Page
     margin: 15px;
     position: relative;
 }
-.service-icons{
+
+.service-icons {
     height: 150px;
     margin-top: -90px;
 }
-.service-card h2{
+
+.service-card h2 {
     font-size: 30px;
     font-weight: 600;
     padding-top: 25px;
 }
-.service-card p{
+
+.service-card p {
     font-size: 20px;
     font-weight: 500;
     padding-top: 20px;
 }
-.service-card .service-card-btn{
+
+.service-card .service-card-btn {
     height: 40px;
     width: 100%;
     margin-top: 50px;
@@ -202,27 +312,32 @@ Landing Page
     border-radius: 5px;
     background: #4DD532;
 }
-.contact-content{
+
+.contact-content {
     background: #A9D84F;
     height: 100vh;
     width: 100%;
     padding-left: 100px;
 }
-.contact-content h1{
+
+.contact-content h1 {
     padding-top: 90px;
     font-size: 40px;
     font-weight: 600;
 }
-.contact-content p{
+
+.contact-content p {
     padding-top: 40px;
     font-size: 30px;
     font-weight: 500;
 }
-.contact-content .contact-box{
+
+.contact-content .contact-box {
     display: flex;
     margin-top: 30px;
     margin-left: 150px;
 }
+
 .contact-content .profile-pic {
     height: 350px;
     width: 320px;
@@ -234,34 +349,40 @@ Landing Page
     background-position: center;
     background-repeat: no-repeat;
 }
-.contact-content .profile-pic h2{
+
+.contact-content .profile-pic h2 {
     font-size: 16px;
     font-weight: 600;
     color: #FFF;
 }
-.contact-content .profile-pic span{
+
+.contact-content .profile-pic span {
     font-size: 22px;
     font-weight: 600;
     color: #FFF;
 }
-.contact-content .contact-form{
+
+.contact-content .contact-form {
     width: 350px;
     margin-left: 50px;
     margin: auto;
 }
-.contact-content .contact-form input{
+
+.contact-content .contact-form input {
     height: 40px;
     padding: 5px 10px;
     width: 100%;
     margin: 5px;
 }
-.contact-content .contact-form textarea{
+
+.contact-content .contact-form textarea {
     width: 100%;
     padding: 10px 10px;
     resize: none;
     margin: 5px;
 }
-.contact-content .contact-form .contact-us-btn{
+
+.contact-content .contact-form .contact-us-btn {
     height: 40px;
     width: 100%;
     margin: 5px;
@@ -269,7 +390,8 @@ Landing Page
     font-size: 16px;
     font-weight: 600;
 }
-.footer{
+
+.footer {
     height: 70px;
     width: 100%;
     padding-left: 100px;
@@ -278,15 +400,18 @@ Landing Page
     background: #A9D84F;
     display: inline-block;
 }
-.footer .copyright{
+
+.footer .copyright {
     font-size: 16px;
     font-weight: 600;
     float: left;
 }
-.footer .social-links{
+
+.footer .social-links {
     float: right;
 }
-.footer .social-links a{
+
+.footer .social-links a {
     padding-left: 30px;
     font-size: 24px;
 }
@@ -298,7 +423,7 @@ About Page
 ==========================================================
 */
 
-.about-content-1{
+.about-content-1 {
     background-image: url(/images/Eggs-layover.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -306,70 +431,82 @@ About Page
     height: 100vh;
     width: 100%;
 }
-.about-content-1 h1{
+
+.about-content-1 h1 {
     padding-left: 100px;
     padding-top: 100px;
     font-size: 70px;
     font-weight: 700;
 }
-.about-content-1 h2{
+
+.about-content-1 h2 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 30px;
     font-weight: 500;
 }
-.about-content-2{
+
+.about-content-2 {
     margin-bottom: 40px;
 }
-.about-content-2 h1{
+
+.about-content-2 h1 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 48px;
     font-weight: 500;
     color: #282828;
 }
-.about-content-2 h1 strong{
+
+.about-content-2 h1 strong {
     font-size: 48px;
     font-weight: 600;
 }
-.about-content-2 h2{
+
+.about-content-2 h2 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 30px;
     font-weight: 500;
 }
-.about-content-2 h3{
+
+.about-content-2 h3 {
     padding-left: 100px;
     padding-top: 90px;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 3px;
 }
-.about-content-3{
+
+.about-content-3 {
     height: 55vh;
     width: 100%;
     background: #A9D84F;
     padding-right: 100px;
 }
-.about-content-3 h1{
+
+.about-content-3 h1 {
     padding-left: 100px;
     padding-top: 80px;
     padding-bottom: 30px;
     font-size: 40px;
     font-weight: 600;
 }
+
 hr {
     border: 0;
     border-top: 2px solid grey;
     margin-left: 100px;
-    margin-top: 45px;          
+    margin-top: 45px;
 }
-.about-content-3 .companies-box{
+
+.about-content-3 .companies-box {
     display: flex;
     margin-top: 30px;
     margin-left: 10%;
 }
-.about-content-3 .company-logo{
+
+.about-content-3 .company-logo {
     margin: auto;
     height: 120px;
 }
@@ -380,7 +517,7 @@ Training Page
 ==========================================================
 */
 
-.training-content-1{
+.training-content-1 {
     height: 100vh;
     width: 100%;
     padding-left: 100px;
@@ -389,78 +526,93 @@ Training Page
     background-repeat: no-repeat;
     background-size: cover;
 }
-.training-content-1 h1{
+
+.training-content-1 h1 {
     padding-top: 100px;
     padding-bottom: 60px;
     font-size: 60px;
     font-weight: 600;
 }
-.training-content-1 ul{
+
+.training-content-1 ul {
     padding-left: 25px;
 }
-.training-content-1 li{
+
+.training-content-1 li {
     padding-top: 10px;
     font-size: 28px;
     font-weight: 500;
 }
-.training-content-1 .services-img{
+
+.training-content-1 .services-img {
     height: 350px;
     position: absolute;
     bottom: -5px;
     right: 90px;
 }
-.training-content-2{
+
+.training-content-2 {
     margin-bottom: 40px;
 }
-.training-content-2 h1{
+
+.training-content-2 h1 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 48px;
     font-weight: 500;
     color: #282828;
 }
-.training-content-2 h1 strong{
+
+.training-content-2 h1 strong {
     font-size: 48px;
     font-weight: 600;
 }
-.training-content-2 h2{
+
+.training-content-2 h2 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 30px;
     font-weight: 500;
 }
-.training-content-2 h3{
+
+.training-content-2 h3 {
     padding-left: 100px;
     padding-top: 90px;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 3px;
 }
-.service-card h4{
+
+.service-card h4 {
     font-size: 30px;
     font-weight: 600;
     padding-top: 25px;
 }
-.contact-content .contact-box-1{
+
+.contact-content .contact-box-1 {
     display: flex;
     margin-top: 30px;
 }
-.contact-content .contact-form-1{
+
+.contact-content .contact-form-1 {
     width: 400px;
 }
-.contact-content .contact-form-1 input{
+
+.contact-content .contact-form-1 input {
     height: 40px;
     padding: 5px 10px;
     width: 100%;
     margin: 5px;
 }
-.contact-content .contact-form-1 textarea{
+
+.contact-content .contact-form-1 textarea {
     width: 100%;
     padding: 10px 10px;
     resize: none;
     margin: 5px;
 }
-.contact-content .contact-form-1 .contact-us-btn{
+
+.contact-content .contact-form-1 .contact-us-btn {
     height: 40px;
     width: 100%;
     margin: 5px;
@@ -475,7 +627,7 @@ Auditing Page
 ==========================================================
 */
 
-.auditing-content-1{
+.auditing-content-1 {
     height: 100vh;
     width: 100%;
     padding-left: 100px;
@@ -484,45 +636,53 @@ Auditing Page
     background-repeat: no-repeat;
     background-size: cover;
 }
-.auditing-content-1 p{
+
+.auditing-content-1 p {
     font-size: 28px;
     font-weight: 500;
     padding-bottom: 30px;
 }
-.auditing-content-1 h1{
+
+.auditing-content-1 h1 {
     padding-top: 100px;
     padding-bottom: 30px;
     font-size: 60px;
     font-weight: 600;
 }
-.auditing-content-1 ul{
+
+.auditing-content-1 ul {
     padding-left: 25px;
 }
-.auditing-content-1 li{
+
+.auditing-content-1 li {
     padding-top: 10px;
     font-size: 28px;
     font-weight: 500;
 }
-.auditing-content-1 .services-img{
+
+.auditing-content-1 .services-img {
     height: 350px;
     position: absolute;
     bottom: -5px;
     right: 90px;
 }
-.auditing-content-2 h1{
+
+.auditing-content-2 h1 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 30px;
     font-weight: 600;
 }
-.services-box-1{
+
+.services-box-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     min-height: 400px;
 }
-.service-card-1{
+
+.service-card-1 {
     height: 300px;
     width: 310px;
     padding: 20px 35px;
@@ -532,35 +692,42 @@ Auditing Page
     margin: 15px;
     position: relative;
 }
-.service-card-1 h4{
+
+.service-card-1 h4 {
     padding-bottom: 20px;
     font-size: 30px;
     font-weight: 600;
 }
-.service-card-1 p{
+
+.service-card-1 p {
     font-size: 20px;
 }
-.auditing-content-3{
+
+.auditing-content-3 {
     margin-bottom: 40px;
 }
-.auditing-content-3 h1{
+
+.auditing-content-3 h1 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 48px;
     font-weight: 500;
     color: #282828;
 }
-.auditing-content-3 h1 strong{
+
+.auditing-content-3 h1 strong {
     font-size: 48px;
     font-weight: 600;
 }
-.auditing-content-3 h2{
+
+.auditing-content-3 h2 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 30px;
     font-weight: 500;
 }
-.auditing-content-3 h3{
+
+.auditing-content-3 h3 {
     padding-left: 100px;
     padding-top: 90px;
     font-size: 40px;
@@ -575,7 +742,7 @@ Consulting Page
 ==========================================================
 */
 
-.consulting-content-1{
+.consulting-content-1 {
     height: 100vh;
     width: 100%;
     padding-left: 100px;
@@ -584,59 +751,66 @@ Consulting Page
     background-repeat: no-repeat;
     background-size: cover;
 }
-.consulting-content-1 p{
+
+.consulting-content-1 p {
     font-size: 28px;
     font-weight: 500;
     padding-bottom: 30px;
 }
-.consulting-content-1 h1{
+
+.consulting-content-1 h1 {
     padding-top: 100px;
     padding-bottom: 30px;
     font-size: 60px;
     font-weight: 600;
 }
-.consulting-content-1 ul{
+
+.consulting-content-1 ul {
     padding-left: 25px;
 }
-.consulting-content-1 li{
+
+.consulting-content-1 li {
     width: 700px;
     padding-top: 10px;
     font-size: 28px;
     font-weight: 500;
 }
-.consulting-content-1 .services-img{
+
+.consulting-content-1 .services-img {
     height: 350px;
     position: absolute;
     bottom: -5px;
     right: 90px;
 }
-.consulting-content-2{
+
+.consulting-content-2 {
     margin-bottom: 40px;
 }
-.consulting-content-2 h1{
+
+.consulting-content-2 h1 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 48px;
     font-weight: 500;
     color: #282828;
 }
-.consulting-content-2 h1 strong{
+
+.consulting-content-2 h1 strong {
     font-size: 48px;
     font-weight: 600;
 }
-.consulting-content-2 h2{
+
+.consulting-content-2 h2 {
     padding-left: 100px;
     padding-top: 60px;
     font-size: 30px;
     font-weight: 500;
 }
-.consulting-content-2 h3{
+
+.consulting-content-2 h3 {
     padding-left: 100px;
     padding-top: 90px;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 3px;
 }
-
-
-
