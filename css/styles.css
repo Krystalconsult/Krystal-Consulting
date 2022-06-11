@@ -206,7 +206,7 @@ Landing Page
     width: 76%;
     padding-left: 75px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .landing-content-1{
         padding-left: 50px;
     }
@@ -216,7 +216,7 @@ Landing Page
     font-size: 60px;
     font-weight: 700;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .landing-content-1 h1{
         padding-top: 120px;
         font-size: 50px;
@@ -228,7 +228,7 @@ Landing Page
     font-size: 30px;
     font-weight: 500;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .landing-content-1 h2{
         font-size: 27px;
     }
@@ -249,7 +249,12 @@ Landing Page
     transition: .3s;
     margin: 0;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .landing-content-1 .contact-btn{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 992px) {
     .landing-content-1 .contact-btn{
         width: 260px;
     }
@@ -270,7 +275,12 @@ Landing Page
     transition: .3s;
     margin-left: 20px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .landing-content-1 .about-btn{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 992px) {
     .landing-content-1 .about-btn{
         width: 260px;
     }
@@ -281,8 +291,12 @@ Landing Page
     top: 20%;
     right: 0px;
 }
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .landing-content-1 .feature-img{
+        height: 60%;
+    }
+}
+@media screen and (max-width: 992px) {
     .landing-content-1 .feature-img {
         height: 55%;
     }
@@ -293,7 +307,13 @@ Landing Page
     width: 100%;
     padding-left: 100px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .landing-content-2{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
     .landing-content-2{
         padding-left: 40px;
         padding-right: 20px;
@@ -305,7 +325,7 @@ Landing Page
     font-weight: 600;
     letter-spacing: 3px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .landing-content-2 h1{
         font-size: 35px;
     }
@@ -328,7 +348,7 @@ Landing Page
     margin: 15px;
     position: relative;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .service-card{
         padding: 10px 25px;
     }
@@ -343,7 +363,7 @@ Landing Page
     font-weight: 600;
     padding-top: 25px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .service-card h2{
         font-size: 27px;
         padding-top: 22px;
@@ -354,7 +374,7 @@ Landing Page
     font-weight: 500;
     padding-top: 20px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .service-card p{
         font-size: 18px;
     }
@@ -376,7 +396,7 @@ Landing Page
     width: 100%;
     padding-left: 100px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .contact-content {
         padding-left: 50px;
     }
@@ -386,7 +406,13 @@ Landing Page
     font-size: 40px;
     font-weight: 600;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .contact-content h1{
+        padding-top: 60px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 992px) {
     .contact-content h1{
         padding-top: 60px;
         font-size: 30px;
@@ -397,7 +423,7 @@ Landing Page
     font-size: 30px;
     font-weight: 500;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .contact-content p{
         padding-top: 50px;
         font-size: 27px;
@@ -408,7 +434,13 @@ Landing Page
     margin-top: 30px;
     margin-left: 150px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .contact-content .contact-box{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
     .contact-content .contact-box{
         margin-top: 30px;
         margin-left: 30px;
