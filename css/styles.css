@@ -815,11 +815,14 @@ Consulting Page
 }
 @media screen and (max-width: 1200px) {
     .consulting-content-1 .services-img {
+        display: none;
+    }
+    /* .consulting-content-1 .services-img {
         height: 250px;
         position: absolute;
         bottom: 40px;
         right: 40px;
-    }
+    } */
 }
 @media screen and (max-width: 992px) {
     .consulting-content-1 .services-img {
