@@ -520,6 +520,7 @@ About Page
     letter-spacing: 3px;
 }
 .about-content-3 {
+    width: 100%;
     background: #A9D84F;
     padding-right: 100px;
     padding-left: 100px;
