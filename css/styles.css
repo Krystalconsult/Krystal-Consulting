@@ -174,6 +174,7 @@ Landing Page
 */
 
 .landing-content-1-container{
+    width: 100%;
     background: #F7E05F;
     padding-bottom: 100px;
 }
@@ -279,6 +280,7 @@ Landing Page
 
 .landing-content-2 {
     padding-left: 100px;
+    width: 100%;
 }
 @media screen and (max-width: 1200px) {
     .landing-content-2{
@@ -306,7 +308,7 @@ Landing Page
 .services-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-    gap: 20px;
+    gap: 10px;
     margin-top: 90px;
 }
 .service-card {
@@ -496,6 +498,7 @@ About Page
 }
 .about-content-2 {
     padding-left: 100px;
+    width: 100%;
 }
 .about-content-2 h1 {
     padding-top: 60px;
@@ -553,9 +556,11 @@ Training Page
 ==========================================================
 */
 
-.training-content-1 {
-    height: 100vh;
+.training-content-container-1{
     width: 100%;
+}
+.training-content-1 {
+    padding-bottom: 40px;
     padding-left: 100px;
     background: url(/images/consulting-bg.png);
     background-position: center;
@@ -581,6 +586,19 @@ Training Page
     position: absolute;
     bottom: -5px;
     right: 90px;
+}
+@media screen and (max-width: 1200px) {
+    .training-content-1 .services-img {
+        height: 250px;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .training-content-1 .services-img {
+        display: none;
+    }
 }
 .training-content-2 {
     margin-bottom: 40px;
@@ -645,10 +663,11 @@ Training Page
 Auditing Page 
 ==========================================================
 */
-
-.auditing-content-1 {
-    height: 100vh;
+.auditing-content-container-1{
     width: 100%;
+}
+.auditing-content-1 {
+    padding-bottom: 40px;
     padding-left: 100px;
     background: url(/images/auditing-bg.png);
     background-position: center;
@@ -680,6 +699,19 @@ Auditing Page
     bottom: -5px;
     right: 90px;
 }
+@media screen and (max-width: 1200px) {
+    .auditing-content-1 .services-img {
+        height: 250px;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .auditing-content-1 .services-img {
+        display: none;
+    }
+}
 .auditing-content-2{
     padding-left: 100px;
 }
@@ -691,7 +723,7 @@ Auditing Page
 .services-box-1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-    gap: 20px;
+    gap: 10px;
     margin-top: 90px;
 }
 .service-card-1 {
@@ -744,9 +776,11 @@ Consulting Page
 ==========================================================
 */
 
-.consulting-content-1 {
-    height: 100vh;
+.consulting-content-container-1{
     width: 100%;
+}
+.consulting-content-1 {
+    padding-bottom: 40px;
     padding-left: 100px;
     background: url(/images/consulting-bg.png);
     background-position: center;
@@ -778,6 +812,19 @@ Consulting Page
     position: absolute;
     bottom: -5px;
     right: 90px;
+}
+@media screen and (max-width: 1200px) {
+    .consulting-content-1 .services-img {
+        height: 250px;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .consulting-content-1 .services-img {
+        display: none;
+    }
 }
 .consulting-content-2 {
     margin-bottom: 40px;
